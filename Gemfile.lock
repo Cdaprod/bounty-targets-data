@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.3.1)
+    activesupport (7.0.4.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -14,7 +14,7 @@ GEM
       thor (~> 1.0)
     byebug (11.1.3)
     coderay (1.1.3)
-    concurrent-ruby (1.1.10)
+    concurrent-ruby (1.2.2)
     coveralls (0.8.23)
       json (>= 1.8, < 3)
       simplecov (~> 0.16.1)
@@ -29,7 +29,7 @@ GEM
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.0)
-    graphql (2.0.13)
+    graphql (2.0.20)
     graphql-client (0.18.0)
       activesupport (>= 3.0)
       graphql
@@ -40,7 +40,11 @@ GEM
     kramdown (2.4.0)
       rexml
     method_source (1.0.0)
-    minitest (5.16.3)
+    mini_portile2 (2.8.1)
+    minitest (5.18.0)
+    nokogiri (1.13.10)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
     nokogiri (1.13.10-x86_64-linux)
       racc (~> 1.4)
     parallel (1.22.1)
@@ -103,7 +107,7 @@ GEM
     twingly-url (6.0.4)
       addressable (~> 2.6)
       public_suffix (>= 3.0.1, < 5.0)
-    tzinfo (2.0.5)
+    tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.2.0)
     webmock (3.18.1)
@@ -112,6 +116,7 @@ GEM
       hashdiff (>= 0.4.0, < 2.0.0)
 
 PLATFORMS
+  ruby
   x86_64-linux
 
 DEPENDENCIES
@@ -128,9 +133,6 @@ DEPENDENCIES
   ssrf_filter (~> 1.0.8)
   twingly-url (~> 6.0.4)
   webmock (~> 3.18.1)
-
-RUBY VERSION
-   ruby 3.1.2p20
 
 BUNDLED WITH
    2.3.7
