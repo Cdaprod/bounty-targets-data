@@ -1,4 +1,4 @@
-FROM ruby:3.1.3
+FROM ruby:3.4.2
 
 RUN apt update && apt-get install -y vim cron
 
